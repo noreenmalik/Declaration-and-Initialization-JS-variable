@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Question 1 -->
+    <h1>JavaScript Introduction</h1>
+    <h3>What is JavaScript ?</h3>
+    <p>JavaScript is a programming language also called client side scripting language, that is used on client side for
+        webpage behavior. <br>
+        JavaScript can update and change both HTML and CSS.
+    </p>
+    <!-- Question 2 -->
+    <h3>Write down difference between Declaration and Initialization a variable.</h3>
+    <p>Creating a variable in JavaScript is called "declaring" a variable.Declaration basically means introducing a new
+        entity to the program.To declare (create) a variable, we need to
+        use the var, let, or const keyword, followed by the name we want to provide to the variable. The var, let, and
+        const keywords tell JavaScript to set aside a portion of memory so that we may store a specific piece of data to
+        it later. <br> like Declare a variable named "x" using the var keyword <br>
+        var x; <br>
+        Initialization is giving a variable it's first value.
+        Initialization is the process of assigning a value to the Variable. Storing a value in a variable is called
+        variable initialization <br> like Assign a value of 2 to the variable "x" using the assignment operator (=) <br>
+        x=2;
+
+    </p>
+    <!-- Question 3 -->
+    <h3>In how many ways we can define a variable?</h3>
+    <p>In JavaScript a variable can define in three differnt ways, by using the keywords var, let and const to declare
+        variables.
+    </p>
+    <!-- Question 4 -->
+    <h3>Is variable case sensitive ?</h3>
+    <p> Yes
+    </p>
+    <!-- Question 5 -->
+    <h3>When we declare a variable can we start it with any number?</h3>
+    <p>No
+    </p>
+
+    <!-- Assignment -->
+
+    <!-- 1 -->
+    <h3>Write a program that declare a variable using var keyword and initializes any value to it</h3>
+    <p class="bold">
+        var class; <br>
+        calss = 20;
+    </p>
+    <!-- 2 -->
+    <h3>Write a program that declare a variable using Constant keyword and initializes any value to it</h3>
+    <p class="bold">
+        const class; <br>
+        calss = 20;
+    </p>
+    <!-- 3 -->
+    <h3>Write a Program that takes two variables X and Y , store the result in a new variable Z and prints a sum of it.
+    </h3>
+    <p class="bold">
+
+        var X; <br>
+        var Y; <br>
+        var Z = X + Y; <br>
+        console.log(Z);
+    </p>
+    <!-- 4 -->
+    <h3>Create a variable called "mycolor" , assign the value "Purple" to it.</h3>
+    <p class="bold">
+        var mycolor; <br>
+        mycolor = "Purple";
+    </p>
+
+    <!-- 5 -->
+    <h3>On one single line, declare three variables with the following names and values: <br>
+        <ul>
+            <li> fname : Lucy </li>
+            <li> lName : John</li>
+            <li> age : 25 </li>
+
+        </ul>
+    </h3>
+    <p class="bold">
+        var fname = "Lucy", lName = "John", age = 25;
+    </p>
+
+
+    <!-- Task -->
+    <div>
+    <P><b>Task # 1: </b>In the below code, we are using only one CSS property at a time, so my question is, Can we add
+        multiple CSS properties when we are using getElementById?
+
+        <br><br>
+        Code :
+        document.getElementById("jspara").style.backgroundColor = "yellow";
+        document.getElementById("jspara").style.fontSize = "20px";
+        document.getElementById("jspara").style.color = "red";
+    </P>
+    <p class="task">
+        Yes! It is very much easy to set multiple styles for an element in a single statement using <span> setAttribute </span>  property. It doesn't effect the
+        existing properties and avoids the complexity of going for loops or plugins.</p>
+        <br><br>
+        <h4>
+        document.getElementById("jspara").setAttribute("style",
+            " background-color: yellow; font-size: 20px; color: red;" )
+        </h4>
+        <h3>Result</h3>
+    <p id="jspara">
+
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, qui repellendus impedit eligendi quibusdam
+        numquam nihil, corrupti necessitatibus a, ex commodi deserunt accusantium? Aliquid, fugiat odio. Sint ipsam quos
+        corrupti.
+    </p>
+</div>
+
+<div>
+    <P><b>Task # 2: </b> In the below code can I add color red to both paragraph and heading in one line or without using [0] or [1] ?
+        <br><br>
+        Code :
+        <i id="para1" class="allpara">Ths is paragraph</i>  
+        <p class="allpara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, amet.</p> 
+        <p class="allpara">Lorem ipsum dolor sit amet.</p>
+<h5 class="allpara">Web Developemnt Course</h5> 
+document.getElementsByClassName("allpara")[0].style.color = "red";
+ document.getElementsByClassName("allpara")[1].style.color = "red";
+    </P>
+    <p class="task">
+        No</p>
+        <br><br>
+ 
+</div>
+
+
+
+
+
+
+
+
+
+    <!-- JS -->
+
+    <!-- 3 -->
+    <script>
+        var X;
+        var Y;
+        //   X = 10;
+        //   Y = 20;
+        var Z = X + Y;
+        console.log(Z);
+    </script>
+
+    <!-- 4 -->
+    <script>
+        var mycolor;
+        mycolor = "Purple";
+     // console.log(mycolor);
+    </script>
+
+    <!-- 5 -->
+    <script>
+        var fname = "Lucy", lName = "John", age = 25;
+     // console.log(fname, lName, age);
+    </script>
+
+    <!-- task-1 -->
+    <script>
+
+        // document.getElementById("jspara").style.backgroundColor = "yellow";
+        // document.getElementById("jspara").style.fontSize = "20px";
+        // document.getElementById("jspara").style.color = "red";
+
+        document.getElementById("jspara").setAttribute("style",
+            " background-color: yellow; font-size: 20px; color: red;" )
+
+    </script>
+
+ <!-- task-2 -->
+ <script>
+
+document.getElementsByClassName("allpara")[0,1].style.color = "red";
+// document.getElementsByClassName("allpara")[1].style.color = "red";
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>
